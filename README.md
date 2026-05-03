@@ -142,27 +142,26 @@ GET /api/history
 View Available watsonx.ai Models
 GET /api/models
 
-🎥 Demo Flow
+
+## 🎥 Demo Flow
 Enter a beginner project idea.
 Click Generate Blueprint.
 BobBlueprint sends the idea to IBM watsonx.ai.
 watsonx.ai generates a structured project blueprint.
 The result is saved to IBM Cloudant.
 The user receives an IBM Bob Prompt Pack to continue building.
-🏆 Built For
 
+## 🏆 Built For
 IBM Bob Dev Day Hackathon
 
-🙋‍♀️ Creator
-
+## 🙋‍♀️ Creator
 Built by Tanya Sharma
 Master’s in Business Analytics student passionate about AI, analytics, automation, and beginner-friendly developer tools.
 
-🔐 Security Note
-
+## 🔐 Security Note
 This project uses environment variables to protect private IBM API keys and Cloudant credentials. The .env file is ignored through .gitignore and should never be pushed to GitHub.
 
-📌 Future Improvements
+## 📌 Future Improvements
 Add login and saved user accounts
 Display blueprint history directly in the frontend
 Add export to PDF or Markdown
@@ -171,6 +170,6 @@ Add voice input using IBM Speech to Text
 Add text-to-speech demo using IBM Text to Speech
 📄 License
 
-This project is for hackathon and learning purposes.
+## This project is for hackathon and learning purposes.
 
 
