@@ -1,16 +1,75 @@
-# React + Vite
+# BobBlueprint AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+BobBlueprint AI is a beginner-friendly AI project launch assistant built for the IBM Bob Dev Day Hackathon. It helps new developers turn rough project ideas into structured, GitHub-ready project blueprints using IBM watsonx.ai, IBM Cloudant, and IBM Bob.
 
-Currently, two official plugins are available:
+## 🚀 What It Does
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+BobBlueprint takes a simple project idea and generates a complete launch kit, including:
 
-## React Compiler
+- Project title and summary
+- Problem statement
+- Target users
+- MVP feature list
+- Beginner-friendly build roadmap
+- Suggested folder structure
+- IBM Bob prompt pack
+- README starter
+- 3-minute hackathon demo checklist
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The goal is to help beginner developers move from “I have an idea” to “I know what to build next.”
 
-## Expanding the ESLint configuration
+## 🧠 Why I Built This
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+As a beginner builder, starting a project can feel overwhelming. Many students and early-career developers know what they want to build, but struggle with planning the MVP, organizing files, writing documentation, debugging, and preparing a demo.
+
+BobBlueprint AI solves that by generating a clear project blueprint and IBM Bob prompts that developers can copy into IBM Bob to continue building faster.
+
+## 🛠️ Tech Stack
+
+- **React** — Frontend user interface
+- **Vite** — Fast development setup
+- **Express.js** — Backend API server
+- **IBM watsonx.ai Runtime** — AI blueprint generation
+- **IBM Cloudant** — Stores generated blueprint history
+- **IBM Bob** — Used as an AI development partner inside VS Code
+
+## 🌐 IBM Services Used
+
+### IBM watsonx.ai Runtime
+
+BobBlueprint uses IBM watsonx.ai Runtime to generate structured project blueprints from plain-English ideas.
+
+### IBM Cloudant
+
+Generated blueprints are saved to IBM Cloudant so users can keep a history of their project ideas and outputs.
+
+### IBM Bob
+
+IBM Bob was used inside VS Code to review the project structure, suggest improvements, support debugging, improve the UI, and prepare the project for the hackathon demo.
+
+BobBlueprint also generates an IBM Bob Prompt Pack so beginner developers can continue building their project with Bob.
+
+## ✨ Key Features
+
+- Clean SaaS-style landing page
+- Live AI demo powered by watsonx.ai
+- Beginner-friendly project blueprint generation
+- IBM Bob prompt pack generation
+- Cloudant saved history
+- Responsive UI
+- Hackathon-ready demo flow
+
+## 🧩 Project Architecture
+
+```txt
+User Idea
+   ↓
+React Frontend
+   ↓
+Express Backend API
+   ↓
+IBM watsonx.ai Runtime
+   ↓
+Generated Project Blueprint
+   ↓
+IBM Cloudant Saved History
