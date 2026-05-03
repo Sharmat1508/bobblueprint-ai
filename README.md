@@ -73,3 +73,104 @@ IBM watsonx.ai Runtime
 Generated Project Blueprint
    ↓
 IBM Cloudant Saved History
+
+
+
+bobblueprint-ai/
+│
+├── public/
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── server.js
+├── package.json
+├── vite.config.js
+├── index.html
+├── .gitignore
+└── README.md
+
+
+## ⚙️ Local Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Sharmat1508/bobblueprint-ai.git
+cd bobblueprint-ai
+
+2. Install dependencies
+npm install
+
+3. Create a .env file
+Create a .env file in the project root.
+
+IBM_API_KEY=your_ibm_cloud_api_key
+IBM_PROJECT_ID=your_watsonx_project_id
+IBM_WATSONX_URL=https://us-south.ml.cloud.ibm.com
+IBM_MODEL_ID=ibm/granite-3-8b-instruct
+
+CLOUDANT_URL=your_cloudant_url
+CLOUDANT_APIKEY=your_cloudant_api_key
+Important: Do not commit your .env file. It contains private credentials.
+
+4. Run the backend server
+npm run server
+Backend runs on:
+http://localhost:5050
+
+5. Run the frontend
+Open a second terminal and run:
+npm run dev
+Frontend runs on:
+http://localhost:5173
+
+API Endpoints
+Generate Blueprint
+POST /api/blueprint
+
+Example request:
+
+{
+  "idea": "I want to build a job application tracker for students."
+}
+
+View Saved Blueprint History
+GET /api/history
+View Available watsonx.ai Models
+GET /api/models
+
+🎥 Demo Flow
+Enter a beginner project idea.
+Click Generate Blueprint.
+BobBlueprint sends the idea to IBM watsonx.ai.
+watsonx.ai generates a structured project blueprint.
+The result is saved to IBM Cloudant.
+The user receives an IBM Bob Prompt Pack to continue building.
+🏆 Built For
+
+IBM Bob Dev Day Hackathon
+
+🙋‍♀️ Creator
+
+Built by Tanya Sharma
+Master’s in Business Analytics student passionate about AI, analytics, automation, and beginner-friendly developer tools.
+
+🔐 Security Note
+
+This project uses environment variables to protect private IBM API keys and Cloudant credentials. The .env file is ignored through .gitignore and should never be pushed to GitHub.
+
+📌 Future Improvements
+Add login and saved user accounts
+Display blueprint history directly in the frontend
+Add export to PDF or Markdown
+Add copy buttons for IBM Bob prompts
+Add voice input using IBM Speech to Text
+Add text-to-speech demo using IBM Text to Speech
+📄 License
+
+This project is for hackathon and learning purposes.
+
+
